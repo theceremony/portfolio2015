@@ -4,4 +4,85 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
 @import "fonts/Avenir";
+
+$black: #000;
+$white: #fff;
+
+html{font-size: 62.5%;}
+body,html{
+	width:100%;
+	height:100%;
+	@include experimental(font-smoothing, antialiased);
+	@include experimental(user-select, none);
+	font-family: $Avenir-Medium;
+	color:$black;
+}
+
+#content-container{
+	position:fixed;
+	left:50%;
+	top:50%;
+	
+	transform: translate(-50%,-50%);
+
+	h1#heading{
+		text-align: left;
+		font-size:3rem;
+		line-height: 100%;
+		text-transform: uppercase;
+		background-color:$white;
+		padding:.3rem;
+	}
+	#main-menu{
+		text-align: left;
+		margin-top:.2rem;
+		font-size:1.5rem;
+		a{
+			display:inline-block;
+			text-decoration: none;
+			color:$black;
+			background-color:$white;
+			padding:.3rem;
+			&::after{
+				content: "/";
+				margin-left:.3rem;
+				margin-right:.3rem;
+			}
+			&:last-of-type{
+				&::after{
+					content:'';
+					margin:0 0 0 0;
+				}
+			}
+			&:hover{
+				&::after{
+					content: "\\";
+				}
+			}
+		}
+	}
+	#work-sub-menu{
+		display:none;
+		&.active{
+			display:block;
+		}
+		a{
+			display:inline-block;
+			background-color:$white;
+			padding:.3rem;
+			margin-top:.5rem;
+			float:left;
+			clear:both;
+			text-decoration: none;
+			color:$black;
+			&::after{
+				content:'';
+				clear:both;
+				display:table;
+			}
+		}
+	}
+}

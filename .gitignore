@@ -3,3 +3,5 @@
 **/.sass-cache/**
 **/.tmp
 **/.tmp/**
+**/build
+**/build/**

@@ -3,7 +3,9 @@ var gulp 			= require('gulp'),
 	compass 		= require('gulp-compass'),
 	autoPrefixer 	= require('gulp-autoprefixer'),
 	minifyCSS 		= require('gulp-minify-css'),
-	rjs				= require('gulp-r'),
+	browserify 		= require('gulp-browserify'),
+	concat			= require('gulp-concat'),
+	copy 			= require('gulp-copy'),
 	cache 			= require('gulp-cache'),
 	imagemin 		= require('gulp-imagemin'),
 	livereload 		= require('gulp-livereload'),
@@ -33,11 +35,28 @@ gulp.task('templates', function() {
 	.pipe(gulp.dest('./build'))
 });
 
+gulp.task('browserify', function() {
+  gulp.src(['src/javascripts/main.js'])
+  .pipe(browserify({
+    insertGlobals: true,
+    debug: true
+  }))
+  .pipe(concat('app.js'))
+  .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('insert-bin',function(){
+	return gulp.src('src/bin/**')
+	.pipe(copy('build/bin',{
+		prefix:2
+	}));
+});
+
 gulp.task('webserver', function() {
-  gulp.src('build')
+  gulp.src('./build')
     .pipe(webserver({
       livereload: true,
-      directoryListing: true,
+      // directoryListing: true,
       open: true,
       fallback: 'index.html'
     }));
@@ -45,6 +64,9 @@ gulp.task('webserver', function() {
 gulp.task('watch', function() {
 	gulp.watch("src/sass/**/*", ['compass']);
 	gulp.watch('src/jade/**/*.jade', ['templates']);
+	gulp.watch('src/javascripts/main.js', ['browserify']);
+	gulp.watch('src/bin/**', ['insert-bin']);
 	//gulp.watch(paths.srcImg + "/**/*", ['images']);
 });
+gulp.task('build-all',['compass','templates','browserify','insert-bin']);
 gulp.task('default',['watch','webserver']);
