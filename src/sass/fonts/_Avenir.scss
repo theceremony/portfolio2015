@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('../fonts/avenir_black-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir_black-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/avenir_black-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir_black-webfont.svg#cd137462c9f070349f975b3d3cd4596a') format('svg'); /* Legacy iOS */
+
+  font-style:   bold;
+  font-weight:  600;
+}
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('../fonts/avenir_medium-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir_medium-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/avenir_medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir_medium-webfont.svg#cd137462c9f070349f975b3d3cd4596a') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  200;
+}
+
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../fonts/avenir_book-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_book-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir_book-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/avenir_book-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir_book-webfont.svg#cd137462c9f070349f975b3d3cd4596a') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+// Variables ------------------------------------------------------------------
+$Avenir-Black: 		'Avenir Black', 	'Helvetica Neue Black', 	sans-serif;
+$Avenir-Medium: 	'Avenir Medium', 	'Helvetica Neue', 			sans-serif;
+$Avenir-Book: 		'Avenir Book', 		'Helvetica Neue', 			sans-serif;
+// ----------------------------------------------------------------------------
