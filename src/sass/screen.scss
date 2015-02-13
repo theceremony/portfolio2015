@@ -10,6 +10,7 @@
 
 $black: #000;
 $white: #fff;
+$hoverColor: #0ff;
 
 html{font-size: 62.5%;}
 body,html{
@@ -30,7 +31,7 @@ body,html{
 
 	h1#heading{
 		text-align: left;
-		font-size:3rem;
+		font-size:4rem;
 		line-height: 100%;
 		text-transform: uppercase;
 		background-color:$white;
@@ -39,16 +40,18 @@ body,html{
 	#main-menu{
 		text-align: left;
 		margin-top:.2rem;
-		font-size:1.5rem;
+		font-size:1.8rem;
 		a{
 			display:inline-block;
 			text-decoration: none;
 			color:$black;
 			background-color:$white;
 			padding:.3rem;
+			text-transform: uppercase;
+
 			&::after{
 				content: "/";
-				margin-left:.3rem;
+				margin-left:.6rem;
 				margin-right:.3rem;
 			}
 			&:last-of-type{
@@ -58,30 +61,48 @@ body,html{
 				}
 			}
 			&:hover{
+				color:$hoverColor;
 				&::after{
-					content: "\\";
+					color:$black;
 				}
 			}
 		}
 	}
 	#work-sub-menu{
-		display:none;
+		// display:none;
 		&.active{
 			display:block;
 		}
 		a{
+			font-size:1.2rem;
+			text-transform: uppercase;
 			display:inline-block;
 			background-color:$white;
-			padding:.3rem;
 			margin-top:.5rem;
 			float:left;
 			clear:both;
 			text-decoration: none;
+			padding:0.3rem;
+			padding-left:0rem;
 			color:$black;
-			&::after{
-				content:'';
-				clear:both;
-				display:table;
+			&::before{
+				content: "/";
+				display:inline-block;
+				width:0px;
+				rotation:90deg;
+				overflow:hidden;
+				transition: width 0.1s ease-in-out;
+				padding:0 0 0 0;
+				margin: 0 0 0 0;
+			}
+			&:hover{
+				color:$hoverColor;
+				
+				&::before{
+					width:1rem;
+					rotation:0deg;
+					transition: width 0.1s ease-in-out;	
+				}
 			}
 		}
 	}

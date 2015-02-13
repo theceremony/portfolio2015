@@ -64,7 +64,7 @@ gulp.task('webserver', function() {
 gulp.task('watch', function() {
 	gulp.watch("src/sass/**/*", ['compass']);
 	gulp.watch('src/jade/**/*.jade', ['templates']);
-	gulp.watch('src/javascripts/main.js', ['browserify']);
+	gulp.watch('src/javascripts/**', ['browserify']);
 	gulp.watch('src/bin/**', ['insert-bin']);
 	//gulp.watch(paths.srcImg + "/**/*", ['images']);
 });

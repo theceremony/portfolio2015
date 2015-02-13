@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 	head
 		meta(charset="utf-8")
 		meta(http-equiv="X-UA-Compatible",content="IE=edge")
@@ -10,18 +10,15 @@ html(lang="en")
 		title
 			|Selected Work From Jeramy Morrill
 	body
-		#content-container
+		#content-container(ng-controller="MenuCtrl")
 			section.header
+				//- h1 {{a}}
 				h1#heading Jeramy Morrill
 				#main-menu
 					a(href="/Work") Work
+					a(href="/Installations") Installations
 					a(href="/About") About
-					a(href="/Other") Other
 				#work-sub-menu
-					a(href="/sony-seperate-together") Sony Seperate Together
-					a(href="/sony-seperate-together") Sony Seperate Together
-					a(href="/sony-seperate-together") Sony Seperate Together
-					a(href="/sony-seperate-together") Sony Seperate Together
-					a(href="/sony-seperate-together") Sony Seperate Together
-					a(href="/sony-seperate-together") Sony Seperate Together
+					a(href="/sony-seperate-together" ng-repeat="project in projects") 
+						|{{project.clientName}}: {{project.projectName}}
 			section.content
