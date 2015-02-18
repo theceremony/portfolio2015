@@ -20,7 +20,7 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 					a(href="/About") About
 				#work-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in projects") 
+						a(href="#/sony-seperate-together" show-project-preview="{{project.projectName}}" ng-repeat="project in projects") 
 							|{{project.clientName}}: {{project.projectName}}
 				#instillation-sub-menu.sub-menu
 					.inner
