@@ -32,17 +32,25 @@ gulp.task('compass', function() {
 gulp.task('templates', function() {
   gulp.src('src/jade/**/*.jade')
 	.pipe(jade({}))
+	.on('error', function(error) {
+		console.log(error);
+		this.emit('end');
+	})
 	.pipe(gulp.dest('./build'))
 });
 
 gulp.task('browserify', function() {
-  gulp.src(['src/javascripts/main.js'])
-  .pipe(browserify({
-    insertGlobals: true,
-    debug: true
-  }))
-  .pipe(concat('app.js'))
-  .pipe(gulp.dest('build/js'));
+	gulp.src(['src/javascripts/main.js'])
+	.pipe(browserify({
+		insertGlobals: true,
+		debug: true
+	}))
+	.on('error', function(error) {
+		console.log(error);
+		this.emit('end');
+	})
+	.pipe(concat('app.js'))
+	.pipe(gulp.dest('build/js'));
 });
 
 gulp.task('insert-bin',function(){

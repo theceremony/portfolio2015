@@ -1,16 +1,13 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/utilities";
 @import "fonts/Avenir";
+@import "animation/simple";
 
 $black: #000;
 $white: #fff;
-$hoverColor: #0ff;
+$hoverColor: #0af;
 
 html{font-size: 62.5%;}
 body,html{
@@ -66,12 +63,34 @@ body,html{
 					color:$black;
 				}
 			}
+			&.active{
+				color:$hoverColor;
+				&::after{
+					color:$black;
+				}
+			}
 		}
 	}
-	#work-sub-menu{
-		// display:none;
-		&.active{
+	.sub-menu{
+		display:none;
+		transform-origin: center top;
+		.inner{
+			&::after{
+				content:'';
+				clear:both;
+				display:table;
+			}
+		}
+		&.shown{
 			display:block;
+		}
+		&.hidden{
+			display:none;
+		}
+		&::after{
+			content:'';
+			clear:both;
+			display:table;
 		}
 		a{
 			font-size:1.2rem;

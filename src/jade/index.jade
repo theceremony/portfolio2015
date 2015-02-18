@@ -15,10 +15,15 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 				//- h1 {{a}}
 				h1#heading Jeramy Morrill
 				#main-menu
-					a(href="/Work") Work
-					a(href="/Installations") Installations
+					a(href="/Work" togglevisible="#work-sub-menu") Work
+					a(href="/Installations" togglevisible="#instillation-sub-menu") Installations
 					a(href="/About") About
-				#work-sub-menu
-					a(href="/sony-seperate-together" ng-repeat="project in projects") 
-						|{{project.clientName}}: {{project.projectName}}
+				#work-sub-menu.sub-menu
+					.inner
+						a(href="#/sony-seperate-together" ng-repeat="project in projects") 
+							|{{project.clientName}}: {{project.projectName}}
+				#instillation-sub-menu.sub-menu
+					.inner
+						a(href="#/sony-seperate-together" ng-repeat="project in projects") 
+							|{{project.clientName}}: {{project.projectName}}
 			section.content

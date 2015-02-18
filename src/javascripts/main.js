@@ -1,11 +1,15 @@
 'use strict';
-var angular 	= require('angular'),
-	MenuCtrl 	= require('./controllers/MenuCtrl');
+window.$		= require('jquery');
+
+var angular 		= require('angular'),
+	MenuCtrl 		= require('./controllers/MenuCtrl'),
+	ToggleVisible 	= require('./directives/ToggleVisible');
  
 
-angular.module('ngAppStrict', []).controller('MenuCtrl', ['$scope','$http', MenuCtrl]);
-
-
+angular // Work Menu Module
+.module('ngAppStrict', [])
+	.controller('MenuCtrl', ['$scope','$http', MenuCtrl])
+	.directive('togglevisible',ToggleVisible);
 
 
 
