@@ -1,117 +1,59 @@
 [
     {
-        "_id":"53d168ede462714ba30b08a0",
         "clientName":"Coke",
         "projectName":"The Wearable Movie",
         "projectId":"Coke-Wearable-Movie",
         "projectSubHead":"The world's first wearable movie",
         "projectUrl":"",
         "mediaFolder":"coke",
-        "showOnLanding":true,
         "fwaSotd":true,
-        "darkText":true,
-        "background":{
-            "color":"#f9f8f6"
-        },
+
         "content":{
             "header":{
                 "title":"Making the world a happier place, one tshirt at a time",
                 "copy":"Coca-Cola wanted to thank people who make the world a happier place by bringing together 600 of their customers, fans and employees to star in their own movie. We started by printing each frame of the film on 600 separate t-shirts, which were sent to around the globe with a personalized thank you. The recipients were simply asked to put on a smile, take a photo, and claim their frame in a collective effort to complete the film.  Bossa handled everything from creative collaboration, design, and prototyping to front-end and back-end development of the HTML5 website."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/69990780?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":null,
-                    "uri":"coke_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
             "awards":[
                 {
-                    "name":"oneshow",
-                    "link":null
+                    "name":"oneshow"
                 },
                 {
-                    "name":"sandbox",
-                    "link":null
+                    "name":"sandbox"
                 },
                 {
-                    "name":"cannes",
-                    "link":null
+                    "name":"cannes"
                 },
                 {
-                    "name":"fwa_sotd",
-                    "link":null
+                    "name":"fwa_sotd"
                 }
             ]
         }
     },
     {
-        "_id":"53d168ede462714ba30b08a1",
         "clientName":"Sony",
         "projectName":"Seperate Together",
         "projectId":"Sony-Seperate-Together",
         "projectSubHead":"An interactive journey through the magic of Northlandz.",
         "projectUrl":"http://www.separate--together.com/",
-        "showOnLanding":true,
         "fwaSotd":true,
         "mediaFolder":"sony",
-        "background":{
-            "color":"#ecebe6"
-        },
+
         "content":{
             "header":{
                 "title":"Explore the world's largest model railroad",
                 "copy":"Northlandz is the world's largest model railroad, built entirely by one man - Bruce Zaccagnino. Sony and Wieden+Kennedy teamed up with Bossa to create a Street View-esque interactive version of Northlandz, built for people around the world to virtually explore Bruce's amazing creation. "
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/87716061?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"Leveraging Sony's QX100 lens-style camera's size and mobility, we captured thousands of images from whole new angles - from traveling through landscapes with the train's POV to overlooking a cliff through a character's eyes. We fused together HTML 5, CSS3, and Web GL animations to create a site that lets you explore the three main landscapes of Northlandz as interactive panoramas, each with different hotspots and vantage points.",
-                    "uri":"sony_1",
-                    "span":"half",
-                    "altForHandheld":false
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"Mimicking the functionality of the camera, you can pan and zoom into different levels (with the ability to snap and share a photo at any point) to uncover story after story.",
-                    "uri":"sony_2",
-                    "span":"half",
-                    "altForHandheld":false
-                }
-            ],
             "awards":[
                 {
-                    "name":"fwa_sotd",
-                    "link":null
+                    "name":"fwa_sotd"
                 },
                 {
-                    "name":"adobe_2",
-                    "link":null
+                    "name":"adobe_2"
                 }
             ]
         }
     },
     {
-        "_id":"53d168ede462714ba30b08a5",
         "clientName":"Hyundai",
         "projectName":"The Driveway Decision Maker",
         "projectId":"Hyundai-Driveway-Decision-Maker",
@@ -119,32 +61,11 @@
         "projectUrl":"http://www.pickmyelantra.com/",
         "mediaFolder":"ddm",
         "fwaSotd":true,
-        "showOnLanding":false,
-        "background":{
-            "image":"bg_tile"
-        },
         "content":{
             "header":{
                 "title":"BLURRING THE LINES BETWEEN DIGITAL AND REALITY",
                 "copy":"For the launch of the new Hyundai Elantra models, Bossa teamed up with Innocean LA to create the Driveway Decision Maker experience. To help users choose the right Elantra for them, we created a journey where you can pick one of the new models and watch it drive to your house. By using projection mapping sequence, real-time 3D animations in Google Maps and Street View, we let users park the right car in their own driveway."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/72445358?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":null,
-                    "uri":"ddm_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
             "awards":[
                 {
                     "name":"sandbox",
@@ -174,78 +95,32 @@
         }
     },
     {
-        "_id":"53d168ede462714ba30b08a4",
         "clientName":"Bossa",
         "projectName":"Comet Collider",
         "projectId":"Comet-Collider",
         "projectSubHead":"An interactive hologram installation.",
         "projectUrl":"",
         "mediaFolder":"comet",
-        "showOnLanding":false,
-        "background":{
-            "image":"bg_tile"
-        },
         "content":{
             "header":{
                 "title":"COMET COLLIDER",
                 "copy":"Comet collider is an interactive holographic installation where multiple users can play simultaneously by connecting with their mobile devices. By combining HTML5 websockets we were able to build a simple user interface to create a real-time interactive hologram."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/72426622?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"",
-                    "uri":"comet_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
-            "awards":[
-
-            ]
+            "awards":[]
         }
     },
     {
-        "_id":"53d168ede462714ba30b08a2",
         "clientName":"Hyundai",
         "projectName":"The Walking Dead Chop Shop",
         "projectId":"Hyundai-Walking-Dead",
         "projectSubHead":"The only app you&apos;ll ever need to survive the zombie apocalypse.",
         "projectUrl":"http://walkingdeadchopshop.com/",
         "mediaFolder":"twd",
-        "showOnLanding":true,
-        "background":{
-            "color":"#990d0a"
-        },
         "content":{
             "header":{
                 "title":"DESIGN YOUR OWN SURVIVAL MACHINE",
                 "copy":"Young audiences were already familiar with Hyundai. But in order to transform that familiarity into a positive association with the brand, this audience needed a relevant way to engage with the vehicles. For a generation obsessed with zombies, we created The Walking Dead Chop Shop app, allowing users to configure their very own Zombie Survival Machine. The app lets fans build and customize their own zombie survival machine, equipped with flamethrowers, razor wire, machine guns, and many more goodies."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":"",
-                    "uri":"<iframe src=\"//player.vimeo.com/video/71542590?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"",
-                    "uri":"twd_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
             "awards":[
                 {
                     "name":"fwa_sotd",
@@ -275,42 +150,18 @@
         }
     },
     {
-        "_id":"53d168ede462714ba30b08a3",
         "clientName":"Lexus",
         "projectName":"Design Disrupted",
         "projectId":"Lexus-Design-Disrupted",
         "projectSubHead":"An interactive holographic installation.",
         "projectUrl":"",
         "mediaFolder":"lexus",
-        "showOnLanding":false,
-        "background":{
-            "color":"#000"
-        },
         "content":{
             "header":{
                 "title":"LEXUS DESIGN DISRUPTED AT NEW YORK FASHION WEEK 2013",
                 "copy":"For NYFW 2013, Bossa and LEGS Media turned the 2014 Lexus IS into an interactive holographic work of art.  Our interactive installation allowed guests to engage with holograms projected inside the car with their mobile devices, creating entrancing animations and stunning graphics. The more people that connected, the more vibrant the holographic visuals became."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/76660596?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"",
-                    "uri":"lexus_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
-            "awards":[
-
-            ]
+            "awards":[]
         }
     },
     {
@@ -318,35 +169,14 @@
         "projectName":"Letsbossa.com",
         "projectId":"Letsbossa",
         "projectSubHead":"An HTML 5 experiment to celebrate the launch of Bossa.",
-        "projectUrl":"",
+        "projectUrl":"http://www.letsbossa.com",
         "fwaSotd":true,
         "mediaFolder":"letsbossa",
-        "showOnLanding":false,
-        "background":{
-            "image":"bg_tile"
-        },
         "content":{
             "header":{
                 "title":"Welcome to Bossa!",
                 "copy":"Bossa's inaugural project, a site experiment on Google Chrome, is a clever and delightful journey told through HTML 5, Google Maps API and charming character animation. The design and ad community took note - www.letsbossa.com was honored by the Webby's and as FWA's site of the day."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":"",
-                    "uri":"<iframe src=\"//player.vimeo.com/video/72426716?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"",
-                    "uri":"letsbossa_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
             "awards":[
                 {
                     "name":"fwa_sotd",
@@ -366,26 +196,12 @@
         "projectSubHead":"Real time social content aggregation.",
         "projectUrl":"",
         "mediaFolder":"absolut",
-        "showOnLanding":false,
-        "background":{
-            "color":"#000000"
-        },
         "content":{
             "header":{
                 "title":"Lorem ipsum dolor sit amet",
                 "copy":"Nights by Absolut, produced by Vice, is an unique one-night only experience that takes place around the world. We teamed up with Sid Lee NYC to create a real time content aggregator display, following the event on social media using the hashtag: #ABSOLUTNIGHTS."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/108845893?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                }
-            ],
             "awards":[
-
             ]
         }
     },
@@ -396,24 +212,11 @@
         "projectSubHead":"Real time karaoke avatars.",
         "projectUrl":"",
         "mediaFolder":"intel",
-        "showOnLanding":false,
-        "background":{
-            "color":"#000000"
-        },
         "content":{
             "header":{
                 "title":"Lorem ipsum dolor sit amet",
                 "copy":"To introduce the Intel Pocket Avatars to the world, we created an epic karaoke, showcasing the avatars themselves, educating the guests on the app’s functionality while entertaining them at the same time."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/108518668?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                }
-            ],
             "awards":[]
         }
     }

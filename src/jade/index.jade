@@ -17,13 +17,13 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 				#main-menu
 					a(href="/Work" togglevisible="#work-sub-menu") Work
 					a(href="/Installations" togglevisible="#instillation-sub-menu") Installations
-					a(href="/About") About
+					a(href="/About" showpreview="boo") About
 				#work-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" show-project-preview="{{project.projectName}}" ng-repeat="project in projects") 
+						a(href="#/sony-seperate-together" ng-repeat="project in projects" showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 				#instillation-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in projects") 
+						a(href="#/sony-seperate-together" ng-repeat="project in projects"  showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 			section.content
