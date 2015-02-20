@@ -7,7 +7,7 @@
         "projectUrl":"",
         "mediaFolder":"coke",
         "fwaSotd":true,
-
+        "type":"website",
         "content":{
             "header":{
                 "title":"Making the world a happier place, one tshirt at a time",
@@ -37,7 +37,7 @@
         "projectUrl":"http://www.separate--together.com/",
         "fwaSotd":true,
         "mediaFolder":"sony",
-
+        "type":"website",
         "content":{
             "header":{
                 "title":"Explore the world's largest model railroad",
@@ -60,6 +60,7 @@
         "projectSubHead":"Three great choices. One amazing way to decide.",
         "projectUrl":"http://www.pickmyelantra.com/",
         "mediaFolder":"ddm",
+        "type":"website",
         "fwaSotd":true,
         "content":{
             "header":{
@@ -101,6 +102,7 @@
         "projectSubHead":"An interactive hologram installation.",
         "projectUrl":"",
         "mediaFolder":"comet",
+        "type":"intallation",
         "content":{
             "header":{
                 "title":"COMET COLLIDER",
@@ -116,6 +118,7 @@
         "projectSubHead":"The only app you&apos;ll ever need to survive the zombie apocalypse.",
         "projectUrl":"http://walkingdeadchopshop.com/",
         "mediaFolder":"twd",
+        "type":"app",
         "content":{
             "header":{
                 "title":"DESIGN YOUR OWN SURVIVAL MACHINE",
@@ -156,6 +159,7 @@
         "projectSubHead":"An interactive holographic installation.",
         "projectUrl":"",
         "mediaFolder":"lexus",
+        "type":"intallation",
         "content":{
             "header":{
                 "title":"LEXUS DESIGN DISRUPTED AT NEW YORK FASHION WEEK 2013",
@@ -172,6 +176,7 @@
         "projectUrl":"http://www.letsbossa.com",
         "fwaSotd":true,
         "mediaFolder":"letsbossa",
+        "type":"website",
         "content":{
             "header":{
                 "title":"Welcome to Bossa!",
@@ -190,28 +195,13 @@
         }
     },
     {
-        "clientName":"Absolut",
-        "projectName":"Nights By Absolut",
-        "projectId":"Nights-By-Absolut",
-        "projectSubHead":"Real time social content aggregation.",
-        "projectUrl":"",
-        "mediaFolder":"absolut",
-        "content":{
-            "header":{
-                "title":"Lorem ipsum dolor sit amet",
-                "copy":"Nights by Absolut, produced by Vice, is an unique one-night only experience that takes place around the world. We teamed up with Sid Lee NYC to create a real time content aggregator display, following the event on social media using the hashtag: #ABSOLUTNIGHTS."
-            },
-            "awards":[
-            ]
-        }
-    },
-    {
         "clientName":"Intel",
         "projectName":"Avataraoke",
         "projectId":"Intel-Avataraoke",
         "projectSubHead":"Real time karaoke avatars.",
         "projectUrl":"",
         "mediaFolder":"intel",
+        "type":"intallation",
         "content":{
             "header":{
                 "title":"Lorem ipsum dolor sit amet",

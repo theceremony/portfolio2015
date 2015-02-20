@@ -7,11 +7,11 @@ var angular 		= require('angular'),
 	ShowPreview 	= require('./directives/ShowPreview');
  
 
-angular // Work Menu Module
-.module('ngAppStrict', [])
-	.controller('MenuCtrl', ['$scope','$http', MenuCtrl])
+angular 
+	.module('ngAppStrict', [])
+	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
-	.directive('showpreview', ShowPreview);
+	.directive('showpreview',ShowPreview);
 
 
 

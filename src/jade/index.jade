@@ -12,18 +12,22 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 	body
 		#content-container(ng-controller="MenuCtrl")
 			section.header
-				//- h1 {{a}}
 				h1#heading Jeramy Morrill
 				#main-menu
 					a(href="/Work" togglevisible="#work-sub-menu") Work
 					a(href="/Installations" togglevisible="#instillation-sub-menu") Installations
+					a(href="/Installations" togglevisible="#apps-sub-menu") Apps
 					a(href="/About" showpreview="boo") About
 				#work-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in projects" showpreview="{{project.projectId}}") 
+						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('website')" showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 				#instillation-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in projects"  showpreview="{{project.projectId}}") 
+						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('intallation')"  showpreview="{{project.projectId}}") 
+							|{{project.clientName}}: {{project.projectName}}
+				#apps-sub-menu.sub-menu
+					.inner
+						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('app')"  showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 			section.content
