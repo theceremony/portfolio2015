@@ -5,6 +5,7 @@ module.exports = function(){
 		element.bind('mouseover',function($event){
 			$event.preventDefault();
 			console.log(attrs['showpreview']);
+			console.log($scope.projects);
 		})
 	}
 }
