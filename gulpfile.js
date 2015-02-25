@@ -39,6 +39,20 @@ gulp.task('templates', function() {
 	.pipe(gulp.dest('./build'))
 });
 
+gulp.task('images', function() {
+  return gulp.src('./src/images/**/*')
+    .pipe(cache(
+    	imagemin(
+    		{ 
+    			optimizationLevel: 3, 
+    			progressive: true, 
+    			interlaced: true
+    		}
+    	)
+    ))
+    .pipe(gulp.dest('./build/img'));
+});
+
 gulp.task('browserify', function() {
 	gulp.src(['src/javascripts/main.js'])
 	.pipe(browserify({
@@ -73,8 +87,8 @@ gulp.task('watch', function() {
 	gulp.watch("src/sass/**/*", ['compass']);
 	gulp.watch('src/jade/**/*.jade', ['templates']);
 	gulp.watch('src/javascripts/**', ['browserify']);
+	gulp.watch('src/images/**', ['images']);
 	gulp.watch('src/bin/**', ['insert-bin']);
-	//gulp.watch(paths.srcImg + "/**/*", ['images']);
 });
-gulp.task('build-all',['compass','templates','browserify','insert-bin']);
+gulp.task('build-all',['sass','templates','browserify','images','insert-bin']);
 gulp.task('default',['watch','webserver']);

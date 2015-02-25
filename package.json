@@ -6,7 +6,11 @@
     "url": "https://github.com/theceremony/portfolio2015.git"
   },
   "browser": {
-    "angular": "./src/javascripts/lib/angular-index.js"
+    "angular": "./src/javascripts/lib/angular-index.js",
+    "easel": "./src/javascripts/lib/easlejs-index.js"
+  },
+  "browserify-shim": {
+      "easel": "createjs"
   },
   "author": "Jeramy Morrill",
   "homepage": "https://github.com/theceremony/portfolio2015",
