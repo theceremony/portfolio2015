@@ -8,10 +8,8 @@ var angular 		= require('angular'),
 	ShowPreview 	= require('./directives/ShowPreview');
  
 
-console.log(createjs);
-
 angular 
-	.module('ngAppStrict', [])
+	.module('ngAppStrict', ['ngRoute'])
 	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
 	.directive('showpreview',ShowPreview);
