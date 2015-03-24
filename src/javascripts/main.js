@@ -8,7 +8,8 @@ var angular 			= require('angular'),
 	CanvasCtrl			= require('./controllers/CanvasCtrl'),
 	ToggleVisible 		= require('./directives/ToggleVisible'),
 	ShowPreview 		= require('./directives/ShowPreview'),
-	DisplayBackground 	= require('./directives/DisplayBackground');
+	DisplayBackground 	= require('./directives/DisplayBackground'),
+	ResizeBackground 	= require('./directives/ResizeBackground');
  // ------------------------------------------------------------
 
 
@@ -20,5 +21,6 @@ angular.module('ngAppStrict',['ngRoute'])
 	// Canvas Controller ------------------------------
 	.controller('CanvasCtrl', CanvasCtrl)
 	.directive('displaybackground',['$window',DisplayBackground]);
+	// .directive('resizebackground',['$window',ResizeBackground]);
 
 
