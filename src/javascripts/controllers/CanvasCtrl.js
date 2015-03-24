@@ -1,7 +1,10 @@
 'use strict';
 
-module.exports = function($scope) {
+ var CanvasCtrl = function($scope,$window) {
 	console.log('hello');
 	
 };
- 
+
+CanvasCtrl.$inject = ["$scope", "$window"];
+
+module.exports = CanvasCtrl;

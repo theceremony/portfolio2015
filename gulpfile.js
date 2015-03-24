@@ -90,5 +90,5 @@ gulp.task('watch', function() {
 	gulp.watch('src/images/**', ['images']);
 	gulp.watch('src/bin/**', ['insert-bin']);
 });
-gulp.task('build-all',['sass','templates','browserify','images','insert-bin']);
+gulp.task('build-all',['compass','templates','browserify','images','insert-bin']);
 gulp.task('default',['watch','webserver']);

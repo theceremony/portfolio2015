@@ -1,5 +1,6 @@
 'use strict';
 window.$			= require('jquery');
+
 // ------------------------------------------------------------
 var angular 			= require('angular'),
 	createjs			= require('easel'),
@@ -10,14 +11,14 @@ var angular 			= require('angular'),
 	DisplayBackground 	= require('./directives/DisplayBackground');
  // ------------------------------------------------------------
 
-angular 
-	.module('ngAppStrict', [])
-	.controller('CanvasCtrl', ['$scope', CanvasCtrl])
-	.directive('displaybackground',DisplayBackground)
+
+angular.module('ngAppStrict',['ngRoute'])
+	// Menu Controller -------------------------------
 	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
-	.directive('showpreview',ShowPreview);
-
-
+	.directive('showpreview',ShowPreview)
+	// Canvas Controller ------------------------------
+	.controller('CanvasCtrl', CanvasCtrl)
+	.directive('displaybackground',['$window',DisplayBackground]);
 
 
