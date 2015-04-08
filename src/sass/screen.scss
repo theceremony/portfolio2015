@@ -1,3 +1,7 @@
+$black: #000;
+$white: #fff;
+$hoverColor: #0af;
+
 
 @import "compass/reset";
 @import "compass/css3";
@@ -5,9 +9,9 @@
 @import "fonts/Avenir";
 @import "animation/simple";
 
-$black: #000;
-$white: #fff;
-$hoverColor: #0af;
+@import "pages/work";
+
+
 
 html{font-size: 62.5%;}
 body,html{
@@ -23,6 +27,7 @@ canvas#main-background-display{
 	top:0;
 	left:0;
 	z-index:0;
+	display:none;
 }
 #content-container{
 	position:fixed;
@@ -39,95 +44,123 @@ canvas#main-background-display{
 		background-color:$white;
 		padding:.3rem;
 	}
-	#main-menu{
-		text-align: left;
-		margin-top:.2rem;
-		font-size:1.8rem;
-		a{
-			display:inline-block;
-			text-decoration: none;
-			color:$black;
-			background-color:$white;
-			padding:.3rem;
-			text-transform: uppercase;
+	section.header{
+		#main-menu{
+			text-align: left;
+			margin-top:.2rem;
+			font-size:1.8rem;
+			a{
+				display:inline-block;
+				text-decoration: none;
+				color:$black;
+				background-color:$white;
+				padding:.3rem;
+				text-transform: uppercase;
 
-			&::after{
-				content: "/";
-				margin-left:.6rem;
-				margin-right:.3rem;
-			}
-			&:last-of-type{
 				&::after{
-					content:'';
-					margin:0 0 0 0;
+					content: "/";
+					margin-left:.6rem;
+					margin-right:.3rem;
 				}
-			}
-			&:hover{
-				color:$hoverColor;
-				&::after{
-					color:$black;
+				&:last-of-type{
+					&::after{
+						content:'';
+						margin:0 0 0 0;
+					}
 				}
-			}
-			&.active{
-				color:$hoverColor;
-				&::after{
-					color:$black;
+				&:hover{
+					color:$hoverColor;
+					&::after{
+						color:$black;
+					}
+				}
+				&.active{
+					color:$hoverColor;
+					&::after{
+						color:$black;
+					}
 				}
 			}
 		}
-	}
-	.sub-menu{
-		display:none;
-		transform-origin: center top;
-		.inner{
+		.sub-menu{
+			display:none;
+			transform-origin: center top;
+			.inner{
+				&::after{
+					content:'';
+					clear:both;
+					display:table;
+				}
+			}
+			&.shown{
+				display:block;
+			}
+			&.hidden{
+				display:none;
+			}
 			&::after{
 				content:'';
 				clear:both;
 				display:table;
 			}
-		}
-		&.shown{
-			display:block;
-		}
-		&.hidden{
-			display:none;
-		}
-		&::after{
-			content:'';
-			clear:both;
-			display:table;
-		}
-		a{
-			font-size:1.2rem;
-			text-transform: uppercase;
-			display:inline-block;
-			background-color:$white;
-			margin-top:.5rem;
-			float:left;
-			clear:both;
-			text-decoration: none;
-			padding:0.3rem;
-			padding-left:0rem;
-			color:$black;
-			&::before{
-				content: "/";
+			a{
+				font-size:1.2rem;
+				text-transform: uppercase;
 				display:inline-block;
-				width:0px;
-				rotation:90deg;
-				overflow:hidden;
-				transition: width 0.1s ease-in-out;
-				padding:0 0 0 0;
-				margin: 0 0 0 0;
-			}
-			&:hover{
-				color:$hoverColor;
-				
+				background-color:$white;
+				margin-top:.5rem;
+				float:left;
+				clear:both;
+				text-decoration: none;
+				padding:0.3rem;
+				padding-left:0rem;
+				color:$black;
 				&::before{
-					width:1rem;
-					rotation:0deg;
-					transition: width 0.1s ease-in-out;	
+					content: "/";
+					display:inline-block;
+					width:0px;
+					rotation:90deg;
+					overflow:hidden;
+					transition: width 0.1s ease-in-out;
+					padding:0 0 0 0;
+					margin: 0 0 0 0;
+				}
+				&:hover{
+					color:$hoverColor;
+					
+					&::before{
+						width:1rem;
+						rotation:0deg;
+						transition: width 0.1s ease-in-out;	
+					}
 				}
 			}
 		}
+		#menu-button{
+			display:none;
+			border:3px solid #000;
+			width:5rem;
+			height:5rem;
+			position:absolute;
+			left:-8rem;
+			top:0rem;
+
+			cursor:pointer;
+			&:hover{
+				border:3px solid #666;
+			}
+		}
+		&.collapsed{
+			#menu-button{
+				display:block;
+			}
+			#menu-container{
+				display:none;
+			}
+		}
 	}
+	
+	
+	
 }
+

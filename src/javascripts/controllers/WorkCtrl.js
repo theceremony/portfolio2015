@@ -1,10 +1,14 @@
 'use strict';
 
  var WorkCtrl = function($scope,$routeParams,$filter) {
-	console.log('WorkCtrl start');
-
-	$scope.title = "yo bro";
+	// ------------------------------------------------------------
+	if($routeParams.hasOwnProperty('projectId')){
+		$scope.project = $filter('filter')($scope.projects,{projectId:$routeParams.projectId})[0];
+		$("body").addClass('work-visible');
+		$("section.header").addClass('collapsed');
+	}else{
+		$("body").removeClass('work-visible');
+		$("section.header").removeClass('collapsed');
+	}
 };
-
-// WorkCtrl.$inject = ["$scope", "$routeParams"];
 module.exports = WorkCtrl;

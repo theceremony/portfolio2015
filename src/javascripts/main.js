@@ -15,10 +15,17 @@ var createjs			= require('easel'),
 
 var app = angular.module('ngAppStrict',['ngRoute'])
 	.config(['$routeProvider',function($routeProvider){
-		$routeProvider.when('/work/:projectId',{
-			controller:'WorkCtrl',
-			templateUrl: '/partials/work.html'
-		})
+		$routeProvider
+			.when('/work/:projectId',{
+				controller:'WorkCtrl',
+				templateUrl: '/partials/work.html'
+			})
+			.when('/welcome',{
+				controller:'WelcomeCtrl'
+			})
+			.otherwise({
+				redirectTo: '/welcome'
+			});
 	}])
 	// Canvas Controller ------------------------------
 	.controller('CanvasCtrl', CanvasCtrl)
@@ -30,4 +37,9 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
 	.directive('showpreview',ShowPreview)
-	.directive('showproject',ShowProject);
+	.directive('showproject',ShowProject)
+	.controller('WelcomeCtrl',function($scope){
+		console.log('hello');
+		$("body").removeClass('work-visible');
+		$("section.header").removeClass('collapsed');
+	});
