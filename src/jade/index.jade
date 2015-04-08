@@ -6,6 +6,9 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='/css/screen.css')
 		link(rel='shortcut icon', href='/favicon.ico?v=2')
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(type='text/javascript', src="/js/app.js")
 		title
 			|Selected Work From Jeramy Morrill
@@ -21,15 +24,16 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 					a(href="/About" showpreview="boo") About
 				#work-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('website')" showpreview="{{project.projectId}}") 
+						a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('website')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 				#instillation-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('intallation')"  showpreview="{{project.projectId}}") 
+						a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('intallation')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
 				#apps-sub-menu.sub-menu
 					.inner
-						a(href="#/sony-seperate-together" ng-repeat="project in getProjectsByType('app')"  showpreview="{{project.projectId}}") 
+						a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('app')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
 							|{{project.clientName}}: {{project.projectName}}
-			section.content
+			section.content(ng-controller="WorkCtrl")
+				ng-view
 
