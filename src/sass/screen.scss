@@ -29,13 +29,39 @@ canvas#main-background-display{
 	z-index:0;
 	display:none;
 }
+body.work-visible{
+	// #content-container{
+	// 	h1#heading{
+	// 		font-size: 3rem;
+	// 		transition:font-size .2s ease-in-out;
+	// 	}
+	// }
+	section.content{
+		opacity:1;
+		transform: translate(0,0);
+		transition:all .5s ease-out;
+		#work{
+			max-width:100%;
+		}
+	}	
+}
+
+body{
+	section.content{
+		position:relative;
+		// overflow: hidden;
+		opacity:0;
+		transform: translate(-200%,0);
+		//transition: transform 2s ease-in-out;
+	}	
+}
 #content-container{
 	position:fixed;
 	left:50%;
-	top:50%;
-	
+	top:50%;	
 	transform: translate(-50%,-50%);
 	z-index:10;
+	// border:1px solid #0f0;
 	h1#heading{
 		text-align: left;
 		font-size:4rem;
@@ -44,6 +70,29 @@ canvas#main-background-display{
 		background-color:$white;
 		padding:.3rem;
 	}
+	h2{
+		font-size:3rem;
+		line-height: 140%;
+		text-transform: uppercase;
+		margin-top:.5rem;
+		font-family:$Avenir-Medium;
+	}
+	h3{
+		font-size:2rem;
+		line-height: 140%;
+		text-transform: uppercase;
+		margin-top:.5rem;
+		font-family:$Avenir-Medium;
+	}
+	p{
+		font-size:1.5rem;
+		line-height: 130%;
+		margin-top:.5rem;
+		font-family:$Avenir-Book;
+	}
+	
+
+
 	section.header{
 		#main-menu{
 			text-align: left;
@@ -138,24 +187,27 @@ canvas#main-background-display{
 		}
 		#menu-button{
 			display:none;
-			border:3px solid #000;
-			width:5rem;
-			height:5rem;
+			// border:0.3rem solid #000;
+			width:2rem;
+			height:2rem;
 			position:absolute;
-			left:-8rem;
+			left:-3rem;
 			top:0rem;
+			content: url(../img/svg/hamburger-01.svg);
+
+			// padding:.5rem;
 
 			cursor:pointer;
 			&:hover{
-				border:3px solid #666;
+				border-color:#666;
 			}
 		}
 		&.collapsed{
 			#menu-button{
-				display:block;
+				// 	display:block;
 			}
 			#menu-container{
-				display:none;
+				// display:none;
 			}
 		}
 	}
