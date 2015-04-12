@@ -1,10 +1,7 @@
 
 #Work{
-	// position:absolute;
-	// display:none;
-	border-top:1px solid #000;
-	margin-top:1rem;
-	transition: width 2s ease-out;
+	border-left:1px solid rgba(0,0,0,.4);
+	padding-left:3rem;
 	h1{
 		/*font-family: $Avenir-Light;*/
 		font-size:3rem;
@@ -12,5 +9,15 @@
 		margin-top:1rem;
 		text-transform: uppercase;
 
+	}
+	#large-thumbnail{
+		margin-bottom:1rem;
+		img{
+			width:100%;
+			height: auto;
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+			box-shadow: .5rem .5rem 0 rgba(0,0,0,.1);
+		}
 	}
 }
