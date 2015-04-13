@@ -41,7 +41,7 @@ body{
 		display:inline-block;
 		margin-left:2rem;
 		opacity:0;
-		transform: translate(-200%,0);
+		transform: translate(200%,0);
 		//transition: transform 2s ease-in-out;
 	}
 	&.work-visible{
