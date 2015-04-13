@@ -30,7 +30,7 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 								|{{project.clientName}}: {{project.projectName}}
 					#instillation-sub-menu.sub-menu
 						.inner
-							a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('intallation')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
+							a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('installation')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
 								|{{project.clientName}}: {{project.projectName}}
 					#apps-sub-menu.sub-menu
 						.inner

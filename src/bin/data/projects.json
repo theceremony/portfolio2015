@@ -54,6 +54,76 @@
         }
     },
     {
+        "clientName":"Keurig",
+        "projectName":"Brewhaha",
+        "projectId":"Keurig-Brewhaha-Game",
+        "projectSubHead":"Enjoy a Keurig brew in 3 simple steps.",
+        "projectUrl":"",
+        "mediaFolder":"keurig_brewhaha",
+        "showOnLanding":false,
+        "fwaSotd":false,
+        "darkText":false,
+        "type":"website",
+        "background":{
+            "color":"#f9f8f6"
+        },
+        "content":{
+            "header":{
+                "title":"Your morning coffee has never been so fun",
+                "copy":"For the release of the Keurig 2.0, we created an online and physical game, inspired by the popular memory game Simon. We then took to the streets of Toronto, launching the game at a two-day event in Dundas Square, where thousands of people gathered to experience The Ultimate Brewhaha Game.."
+            },
+            "layoutObjects":[
+                {
+                    "type":"video",
+                    "title":null,
+                    "copy":null,
+                    "uri":"<iframe src=\"//player.vimeo.com/video/118260518?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+                    "span":"full"
+                },
+                {
+                    "type":"jpeg",
+                    "title":null,
+                    "copy":"The Ultimate Brewhaha Game game was designed and developed to work across multiple platforms; desktop, table and mobile (iOS and Android).",
+                    "uri":"keurig_1",
+                    "span":"full",
+                    "altForHandheld":true
+                }
+            ],
+            "awards":[]
+        }
+    },
+    {
+        "clientName":"McDonalds",
+        "projectName":"Christmas Cracker",
+        "projectId":"McDonalds-christmas-cracker",
+        "projectSubHead":"An interactive bilboard for the holidays.",
+        "projectUrl":"",
+        "mediaFolder":"mcd_christmas",
+        "showOnLanding":false,
+        "fwaSotd":false,
+        "darkText":true,
+        "type":"installation",
+        "background":{
+            "color":"#f9f8f6"
+        },
+        "content":{
+            "header":{
+                "title":"Sharing Christmas cracker fun with at Piccadilly Circus",
+                "copy":"On the week before Christmas, McDonald’s spread some Festive cheer in Piccadilly Circus with an interactive digital billboard. For one day only, the billboard showed a giant Christmas Cracker, that passers-by could pull with a swipe of their phone, and win a Winter Warmer or Toffee Latte."
+            },
+            "layoutObjects":[
+                {
+                    "type":"video",
+                    "title":null,
+                    "copy":null,
+                    "uri":"<iframe src=\"//player.vimeo.com/video/124232650?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+                    "span":"full"
+                }
+            ],
+            "awards":[]
+        }
+    },
+    {
         "clientName":"Hyundai",
         "projectName":"The Driveway Decision Maker",
         "projectId":"Hyundai-Driveway-Decision-Maker",
@@ -102,7 +172,7 @@
         "projectSubHead":"An interactive hologram installation.",
         "projectUrl":"",
         "mediaFolder":"comet",
-        "type":"intallation",
+        "type":"installation",
         "content":{
             "header":{
                 "title":"COMET COLLIDER",
@@ -159,7 +229,7 @@
         "projectSubHead":"An interactive holographic installation.",
         "projectUrl":"",
         "mediaFolder":"lexus",
-        "type":"intallation",
+        "type":"installation",
         "content":{
             "header":{
                 "title":"LEXUS DESIGN DISRUPTED AT NEW YORK FASHION WEEK 2013",
@@ -201,7 +271,7 @@
         "projectSubHead":"Real time karaoke avatars.",
         "projectUrl":"",
         "mediaFolder":"intel",
-        "type":"intallation",
+        "type":"installation",
         "content":{
             "header":{
                 "title":"Lorem ipsum dolor sit amet",
