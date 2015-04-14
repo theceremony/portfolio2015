@@ -1,24 +1,8 @@
 
 #Work{
-	border-left:1px solid rgba(0,0,0,.4);
-	padding-left:5rem;
-	.row{
-		margin-bottom:2rem;
-	}
-	h1{
-		font-family: $Avenir-Black;
-		font-size:5rem;
-		line-height: 120%;
-		margin-bottom:1rem;
-	}
-	h4{
-		font-size: 2rem;
-		font-family: $Avenir-Book;
-		font-style: italic;
-	}
 	#large-video{
-		width: 40vw;
-    	height: 22.5vw;
+		width: 50vw;
+    	height: 28.1vw;
 		box-shadow: .5rem .5rem 0 rgba(0,0,0,.1);
 		border:.1rem solid rgba(0,0,0,.5);
 	}
@@ -29,6 +13,45 @@
 			height: auto;
 			border:.1rem solid rgba(0,0,0,.5);
 			box-shadow: .5rem .5rem 0 rgba(0,0,0,.1);
+		}
+	}
+	.award{
+		width:5rem;
+		height:5rem;
+		display:inline-block;
+		margin-right:2rem;
+		&.oneshow{
+			content: url(../img/svg/award-oneshow.svg);
+		}
+		&.sandbox{
+			content: url(../img/svg/award-sandbox.svg);
+		}
+		&.cannes{
+			content: url(../img/svg/award-cannes.svg);
+		}
+		&.fwa_sotd{
+			content: url(../img/svg/award-fwa_sotd.svg);
+		}
+		&.webby{
+			content: url(../img/svg/award-webby.svg);
+		}
+		&.sxsw{
+			content: url(../img/svg/award-sxsw.svg);
+		}
+		&.nyfest{
+			content: url(../img/svg/award-nyfest.svg);
+		}
+		&.adobe{
+			content: url(../img/svg/award-adobe.svg);
+		}
+		&.adobe_2{
+			content: url(../img/svg/award-adobe_2.svg);
+		}
+		&.alist{
+			content: url(../img/svg/award-alist.svg);
+		}
+		&.effie{
+			content: url(../img/svg/award-effie.svg);
 		}
 	}
 }

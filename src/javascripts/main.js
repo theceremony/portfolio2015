@@ -4,6 +4,7 @@
 var createjs			= require('easel'),
 	MenuCtrl 			= require('./controllers/MenuCtrl'),
 	WorkCtrl 			= require('./controllers/WorkCtrl'),
+	AboutCtrl 			= require('./controllers/AboutCtrl'),
 	CanvasCtrl			= require('./controllers/CanvasCtrl'),
 	ToggleVisible 		= require('./directives/ToggleVisible'),
 	ShowPreview 		= require('./directives/ShowPreview'),
@@ -19,6 +20,10 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 			.when('/work/:projectId',{
 				controller:'WorkCtrl',
 				templateUrl: '/partials/work.html'
+			})
+			.when('/about',{
+				controller:'AboutCtrl',
+				templateUrl: '/partials/about.html'
 			})
 			.when('/welcome',{
 				controller:'WelcomeCtrl'
@@ -37,6 +42,7 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 	.directive('resizebackground',['$window',ResizeBackground])
 	// Work Controller ------------------------------
 	.controller('WorkCtrl',['$scope','$routeParams','$filter', WorkCtrl])
+	.controller('AboutCtrl',['$scope','$routeParams','$filter', AboutCtrl])
 	// Menu Controller -------------------------------
 	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
@@ -46,4 +52,5 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 		console.log('hello');
 		$("body").removeClass('work-visible');
 		$("section.header").removeClass('collapsed');
+		
 	});

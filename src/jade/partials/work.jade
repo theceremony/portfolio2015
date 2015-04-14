@@ -11,4 +11,7 @@
 		h4 {{project.projectSubHead}}
 	.row
 		p {{project.content.header.copy}}
+	.row.awards(ng-if!="project.content.awards.length > 0")
+		div.award(ng-repeat="award in project.content.awards" class="{{award.name}}") {{award.name}}
+
 	

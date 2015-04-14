@@ -23,7 +23,7 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 						a(href="/Work" togglevisible="#work-sub-menu") Work
 						a(href="/Installations" togglevisible="#instillation-sub-menu") Installations
 						a(href="/Installations" togglevisible="#apps-sub-menu") Apps
-						a(href="/About" showpreview="boo") About
+						a(href="/#/about") About
 					#work-sub-menu.sub-menu
 						.inner
 							a(href="#/work/{{project.projectId}}" ng-repeat="project in getProjectsByType('website')" showproject="{{project.projectId}}" showpreview="{{project.projectId}}") 
