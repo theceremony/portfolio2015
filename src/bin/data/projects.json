@@ -1,283 +1,265 @@
 [
     {
-        "clientName":"Coke",
-        "projectName":"The Wearable Movie",
-        "projectId":"Coke-Wearable-Movie",
-        "projectSubHead":"The world's first wearable movie",
-        "projectUrl":"",
-        "mediaFolder":"coke",
-        "fwaSotd":true,
-        "type":"website",
-        "content":{
-            "header":{
-                "title":"Making the world a happier place, one tshirt at a time",
-                "copy":"Coca-Cola wanted to thank people who make the world a happier place by bringing together 600 of their customers, fans and employees to star in their own movie. We started by printing each frame of the film on 600 separate t-shirts, which were sent to around the globe with a personalized thank you. The recipients were simply asked to put on a smile, take a photo, and claim their frame in a collective effort to complete the film.  Bossa handled everything from creative collaboration, design, and prototyping to front-end and back-end development of the HTML5 website."
+        "clientName": "Coke",
+        "projectName": "The Wearable Movie",
+        "projectId": "Coke-Wearable-Movie",
+        "projectSubHead": "The world's first wearable movie",
+        "projectUrl": "",
+        "mediaFolder": "coke",
+        "videoUrl": "https://player.vimeo.com/video/69990780?title=0&byline=0&portrait=0",
+        "fwaSotd": true,
+        "type": "website",
+        "content": {
+            "header": {
+                "title": "Making the world a happier place, one tshirt at a time",
+                "copy": "Coca-Cola wanted to thank people who make the world a happier place by bringing together 600 of their customers, fans and employees to star in their own movie. We started by printing each frame of the film on 600 separate t-shirts, which were sent to around the globe with a personalized thank you. The recipients were simply asked to put on a smile, take a photo, and claim their frame in a collective effort to complete the film.  Bossa handled everything from creative collaboration, design, and prototyping to front-end and back-end development of the HTML5 website."
             },
-            "awards":[
+            "awards": [
                 {
-                    "name":"oneshow"
+                    "name": "oneshow"
                 },
                 {
-                    "name":"sandbox"
+                    "name": "sandbox"
                 },
                 {
-                    "name":"cannes"
+                    "name": "cannes"
                 },
                 {
-                    "name":"fwa_sotd"
+                    "name": "fwa_sotd"
                 }
             ]
         }
     },
     {
-        "clientName":"Sony",
-        "projectName":"Seperate Together",
-        "projectId":"Sony-Seperate-Together",
-        "projectSubHead":"An interactive journey through the magic of Northlandz.",
-        "projectUrl":"http://www.separate--together.com/",
-        "fwaSotd":true,
-        "mediaFolder":"sony",
-        "type":"website",
-        "content":{
-            "header":{
-                "title":"Explore the world's largest model railroad",
-                "copy":"Northlandz is the world's largest model railroad, built entirely by one man - Bruce Zaccagnino. Sony and Wieden+Kennedy teamed up with Bossa to create a Street View-esque interactive version of Northlandz, built for people around the world to virtually explore Bruce's amazing creation. "
+        "clientName": "Sony",
+        "projectName": "Seperate Together",
+        "projectId": "Sony-Seperate-Together",
+        "projectSubHead": "An interactive journey through the magic of Northlandz.",
+        "projectUrl": "http://www.separate--together.com/",
+        "fwaSotd": true,
+        "mediaFolder": "sony",
+        "type": "website",
+        "videoUrl": "https://player.vimeo.com/video/117536390?title=0&byline=0&portrait=0",
+        "content": {
+            "header": {
+                "title": "Explore the world's largest model railroad",
+                "copy": "Northlandz is the world's largest model railroad, built entirely by one man - Bruce Zaccagnino. Sony and Wieden+Kennedy teamed up with Bossa to create a Street View-esque interactive version of Northlandz, built for people around the world to virtually explore Bruce's amazing creation. "
             },
-            "awards":[
+            "awards": [
                 {
-                    "name":"fwa_sotd"
+                    "name": "fwa_sotd"
                 },
                 {
-                    "name":"adobe_2"
+                    "name": "adobe_2"
                 }
             ]
         }
     },
     {
-        "clientName":"Keurig",
-        "projectName":"Brewhaha",
-        "projectId":"Keurig-Brewhaha-Game",
-        "projectSubHead":"Enjoy a Keurig brew in 3 simple steps.",
-        "projectUrl":"",
-        "mediaFolder":"keurig_brewhaha",
-        "showOnLanding":false,
-        "fwaSotd":false,
-        "darkText":false,
-        "type":"website",
-        "background":{
-            "color":"#f9f8f6"
+        "clientName": "Keurig",
+        "projectName": "Brewhaha",
+        "projectId": "Keurig-Brewhaha-Game",
+        "projectSubHead": "Enjoy a Keurig brew in 3 simple steps.",
+        "projectUrl": "",
+        "mediaFolder": "keurig_brewhaha",
+        "videoUrl": "https://player.vimeo.com/video/118260518?title=0&byline=0&portrait=0",
+        "showOnLanding": false,
+        "fwaSotd": false,
+        "darkText": false,
+        "type": "website",
+        "background": {
+            "color": "#f9f8f6"
         },
-        "content":{
-            "header":{
-                "title":"Your morning coffee has never been so fun",
-                "copy":"For the release of the Keurig 2.0, we created an online and physical game, inspired by the popular memory game Simon. We then took to the streets of Toronto, launching the game at a two-day event in Dundas Square, where thousands of people gathered to experience The Ultimate Brewhaha Game.."
+        "content": {
+            "header": {
+                "title": "Your morning coffee has never been so fun",
+                "copy": "For the release of the Keurig 2.0, we created an online and physical game, inspired by the popular memory game Simon. We then took to the streets of Toronto, launching the game at a two-day event in Dundas Square, where thousands of people gathered to experience The Ultimate Brewhaha Game.."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/118260518?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                },
-                {
-                    "type":"jpeg",
-                    "title":null,
-                    "copy":"The Ultimate Brewhaha Game game was designed and developed to work across multiple platforms; desktop, table and mobile (iOS and Android).",
-                    "uri":"keurig_1",
-                    "span":"full",
-                    "altForHandheld":true
-                }
-            ],
-            "awards":[]
+            "awards": []
         }
     },
     {
-        "clientName":"McDonalds",
-        "projectName":"Christmas Cracker",
-        "projectId":"McDonalds-christmas-cracker",
-        "projectSubHead":"An interactive bilboard for the holidays.",
-        "projectUrl":"",
-        "mediaFolder":"mcd_christmas",
-        "showOnLanding":false,
-        "fwaSotd":false,
-        "darkText":true,
-        "type":"installation",
-        "background":{
-            "color":"#f9f8f6"
+        "clientName": "McDonalds",
+        "projectName": "Christmas Cracker",
+        "projectId": "McDonalds-christmas-cracker",
+        "videoUrl": "https://player.vimeo.com/video/124232650?title=0&byline=0&portrait=0",
+        "projectSubHead": "An interactive bilboard for the holidays.",
+        "projectUrl": "",
+        "mediaFolder": "mcd_christmas",
+        "showOnLanding": false,
+        "fwaSotd": false,
+        "darkText": true,
+        "type": "installation",
+        "background": {
+            "color": "#f9f8f6"
         },
-        "content":{
-            "header":{
-                "title":"Sharing Christmas cracker fun with at Piccadilly Circus",
-                "copy":"On the week before Christmas, McDonald’s spread some Festive cheer in Piccadilly Circus with an interactive digital billboard. For one day only, the billboard showed a giant Christmas Cracker, that passers-by could pull with a swipe of their phone, and win a Winter Warmer or Toffee Latte."
+        "content": {
+            "header": {
+                "title": "Sharing Christmas cracker fun with at Piccadilly Circus",
+                "copy": "On the week before Christmas, McDonald’s spread some Festive cheer in Piccadilly Circus with an interactive digital billboard. For one day only, the billboard showed a giant Christmas Cracker, that passers-by could pull with a swipe of their phone, and win a Winter Warmer or Toffee Latte."
             },
-            "layoutObjects":[
-                {
-                    "type":"video",
-                    "title":null,
-                    "copy":null,
-                    "uri":"<iframe src=\"//player.vimeo.com/video/124232650?title=0&amp;byline=0&amp;portrait=0\" width=\"1240\" height=\"698\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-                    "span":"full"
-                }
-            ],
-            "awards":[]
+            "awards": []
         }
     },
     {
-        "clientName":"Hyundai",
-        "projectName":"The Driveway Decision Maker",
-        "projectId":"Hyundai-Driveway-Decision-Maker",
-        "projectSubHead":"Three great choices. One amazing way to decide.",
-        "projectUrl":"http://www.pickmyelantra.com/",
-        "mediaFolder":"ddm",
-        "type":"website",
-        "fwaSotd":true,
-        "content":{
-            "header":{
-                "title":"BLURRING THE LINES BETWEEN DIGITAL AND REALITY",
-                "copy":"For the launch of the new Hyundai Elantra models, Bossa teamed up with Innocean LA to create the Driveway Decision Maker experience. To help users choose the right Elantra for them, we created a journey where you can pick one of the new models and watch it drive to your house. By using projection mapping sequence, real-time 3D animations in Google Maps and Street View, we let users park the right car in their own driveway."
+        "clientName": "Hyundai",
+        "projectName": "The Driveway Decision Maker",
+        "projectId": "Hyundai-Driveway-Decision-Maker",
+        "projectSubHead": "Three great choices. One amazing way to decide.",
+        "projectUrl": "http://www.pickmyelantra.com/",
+        "mediaFolder": "ddm",
+        "videoUrl": "https://player.vimeo.com/video/61387913?title=0&byline=0&portrait=0",
+        "type": "website",
+        "fwaSotd": true,
+        "content": {
+            "header": {
+                "title": "BLURRING THE LINES BETWEEN DIGITAL AND REALITY",
+                "copy": "For the launch of the new Hyundai Elantra models, Bossa teamed up with Innocean LA to create the Driveway Decision Maker experience. To help users choose the right Elantra for them, we created a journey where you can pick one of the new models and watch it drive to your house. By using projection mapping sequence, real-time 3D animations in Google Maps and Street View, we let users park the right car in their own driveway."
             },
-            "awards":[
+            "awards": [
                 {
-                    "name":"sandbox",
-                    "link":null
+                    "name": "sandbox",
+                    "link": null
                 },
                 {
-                    "name":"webby",
-                    "link":null
+                    "name": "webby",
+                    "link": null
                 },
                 {
-                    "name":"fwa_sotd",
-                    "link":null
+                    "name": "fwa_sotd",
+                    "link": null
                 },
                 {
-                    "name":"sxsw",
-                    "link":null
+                    "name": "sxsw",
+                    "link": null
                 },
                 {
-                    "name":"oneshow",
-                    "link":null
+                    "name": "oneshow",
+                    "link": null
                 },
                 {
-                    "name":"nyfest",
-                    "link":null
+                    "name": "nyfest",
+                    "link": null
                 }
             ]
         }
     },
     {
-        "clientName":"Bossa",
-        "projectName":"Comet Collider",
-        "projectId":"Comet-Collider",
-        "projectSubHead":"An interactive hologram installation.",
-        "projectUrl":"",
-        "mediaFolder":"comet",
-        "type":"installation",
-        "content":{
-            "header":{
-                "title":"COMET COLLIDER",
-                "copy":"Comet collider is an interactive holographic installation where multiple users can play simultaneously by connecting with their mobile devices. By combining HTML5 websockets we were able to build a simple user interface to create a real-time interactive hologram."
+        "clientName": "Bossa",
+        "projectName": "Comet Collider",
+        "projectId": "Comet-Collider",
+        "projectSubHead": "An interactive hologram installation.",
+        "projectUrl": "",
+        "mediaFolder": "comet",
+        "videoUrl": "https://player.vimeo.com/video/61389103?title=0&byline=0&portrait=0",
+        "type": "installation",
+        "content": {
+            "header": {
+                "title": "COMET COLLIDER",
+                "copy": "Comet collider is an interactive holographic installation where multiple users can play simultaneously by connecting with their mobile devices. By combining HTML5 websockets we were able to build a simple user interface to create a real-time interactive hologram."
             },
-            "awards":[]
+            "awards": []
         }
     },
     {
-        "clientName":"Hyundai",
-        "projectName":"The Walking Dead Chop Shop",
-        "projectId":"Hyundai-Walking-Dead",
-        "projectSubHead":"The only app you&apos;ll ever need to survive the zombie apocalypse.",
-        "projectUrl":"http://walkingdeadchopshop.com/",
-        "mediaFolder":"twd",
-        "type":"app",
-        "content":{
-            "header":{
-                "title":"DESIGN YOUR OWN SURVIVAL MACHINE",
-                "copy":"Young audiences were already familiar with Hyundai. But in order to transform that familiarity into a positive association with the brand, this audience needed a relevant way to engage with the vehicles. For a generation obsessed with zombies, we created The Walking Dead Chop Shop app, allowing users to configure their very own Zombie Survival Machine. The app lets fans build and customize their own zombie survival machine, equipped with flamethrowers, razor wire, machine guns, and many more goodies."
+        "clientName": "Hyundai",
+        "projectName": "The Walking Dead Chop Shop",
+        "projectId": "Hyundai-Walking-Dead",
+        "projectSubHead": "The only app you'll ever need to survive the zombie apocalypse.",
+        "projectUrl": "http://walkingdeadchopshop.com/",
+        "mediaFolder": "twd",
+        "videoUrl": "https://player.vimeo.com/video/71542590?title=0&byline=0&portrait=0",
+        "type": "app",
+        "content": {
+            "header": {
+                "title": "DESIGN YOUR OWN SURVIVAL MACHINE",
+                "copy": "Young audiences were already familiar with Hyundai. But in order to transform that familiarity into a positive association with the brand, this audience needed a relevant way to engage with the vehicles. For a generation obsessed with zombies, we created The Walking Dead Chop Shop app, allowing users to configure their very own Zombie Survival Machine. The app lets fans build and customize their own zombie survival machine, equipped with flamethrowers, razor wire, machine guns, and many more goodies."
             },
-            "awards":[
+            "awards": [
                 {
-                    "name":"fwa_sotd",
-                    "link":null
+                    "name": "fwa_sotd",
+                    "link": null
                 },
                 {
-                    "name":"alist",
-                    "link":null
+                    "name": "alist",
+                    "link": null
                 },
                 {
-                    "name":"sxsw",
-                    "link":null
+                    "name": "sxsw",
+                    "link": null
                 },
                 {
-                    "name":"webby",
-                    "link":null
+                    "name": "webby",
+                    "link": null
                 },
                 {
-                    "name":"effie",
-                    "link":null
+                    "name": "effie",
+                    "link": null
                 },
                 {
-                    "name":"oneshow",
-                    "link":null
+                    "name": "oneshow",
+                    "link": null
                 }
             ]
         }
     },
     {
-        "clientName":"Lexus",
-        "projectName":"Design Disrupted",
-        "projectId":"Lexus-Design-Disrupted",
-        "projectSubHead":"An interactive holographic installation.",
-        "projectUrl":"",
-        "mediaFolder":"lexus",
-        "type":"installation",
-        "content":{
-            "header":{
-                "title":"LEXUS DESIGN DISRUPTED AT NEW YORK FASHION WEEK 2013",
-                "copy":"For NYFW 2013, Bossa and LEGS Media turned the 2014 Lexus IS into an interactive holographic work of art.  Our interactive installation allowed guests to engage with holograms projected inside the car with their mobile devices, creating entrancing animations and stunning graphics. The more people that connected, the more vibrant the holographic visuals became."
+        "clientName": "Lexus",
+        "projectName": "Design Disrupted",
+        "projectId": "Lexus-Design-Disrupted",
+        "projectSubHead": "An interactive holographic installation.",
+        "projectUrl": "",
+        "mediaFolder": "lexus",
+        "type": "installation",
+        "content": {
+            "header": {
+                "title": "LEXUS DESIGN DISRUPTED AT NEW YORK FASHION WEEK 2013",
+                "copy": "For NYFW 2013, Bossa and LEGS Media turned the 2014 Lexus IS into an interactive holographic work of art.  Our interactive installation allowed guests to engage with holograms projected inside the car with their mobile devices, creating entrancing animations and stunning graphics. The more people that connected, the more vibrant the holographic visuals became."
             },
-            "awards":[]
+            "awards": []
         }
     },
     {
-        "clientName":"Bossa",
-        "projectName":"Letsbossa.com",
-        "projectId":"Letsbossa",
-        "projectSubHead":"An HTML 5 experiment to celebrate the launch of Bossa.",
-        "projectUrl":"http://www.letsbossa.com",
-        "fwaSotd":true,
-        "mediaFolder":"letsbossa",
-        "type":"website",
-        "content":{
-            "header":{
-                "title":"Welcome to Bossa!",
-                "copy":"Bossa's inaugural project, a site experiment on Google Chrome, is a clever and delightful journey told through HTML 5, Google Maps API and charming character animation. The design and ad community took note - www.letsbossa.com was honored by the Webby's and as FWA's site of the day."
+        "clientName": "Bossa",
+        "projectName": "Letsbossa.com",
+        "projectId": "Letsbossa",
+        "projectSubHead": "An HTML 5 experiment to celebrate the launch of Bossa.",
+        "projectUrl": "http://www.letsbossa.com",
+        "fwaSotd": true,
+        "mediaFolder": "letsbossa",
+        "type": "website",
+        "content": {
+            "header": {
+                "title": "Welcome to Bossa!",
+                "copy": "Bossa's inaugural project, a site experiment on Google Chrome, is a clever and delightful journey told through HTML 5, Google Maps API and charming character animation. The design and ad community took note - www.letsbossa.com was honored by the Webby's and as FWA's site of the day."
             },
-            "awards":[
+            "awards": [
                 {
-                    "name":"fwa_sotd",
-                    "link":null
+                    "name": "fwa_sotd",
+                    "link": null
                 },
                 {
-                    "name":"webby",
-                    "link":null
+                    "name": "webby",
+                    "link": null
                 }
             ]
         }
     },
     {
-        "clientName":"Intel",
-        "projectName":"Avataraoke",
-        "projectId":"Intel-Avataraoke",
-        "projectSubHead":"Real time karaoke avatars.",
-        "projectUrl":"",
-        "mediaFolder":"intel",
-        "type":"installation",
-        "content":{
-            "header":{
-                "title":"Lorem ipsum dolor sit amet",
-                "copy":"To introduce the Intel Pocket Avatars to the world, we created an epic karaoke, showcasing the avatars themselves, educating the guests on the app’s functionality while entertaining them at the same time."
+        "clientName": "Intel",
+        "projectName": "Avataraoke",
+        "projectId": "Intel-Avataraoke",
+        "projectSubHead": "Real time karaoke avatars.",
+        "projectUrl": "",
+        "mediaFolder": "intel",
+        "videoUrl": "https://player.vimeo.com/video/108518668?title=0&byline=0&portrait=0",
+        "type": "installation",
+        "content": {
+            "header": {
+                "title": "Lorem ipsum dolor sit amet",
+                "copy": "To introduce the Intel Pocket Avatars to the world, we created an epic karaoke, showcasing the avatars themselves, educating the guests on the app’s functionality while entertaining them at the same time."
             },
-            "awards":[]
+            "awards": []
         }
     }
 ]

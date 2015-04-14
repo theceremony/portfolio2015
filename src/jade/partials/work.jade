@@ -1,7 +1,14 @@
-#Work
-	h2 {{project.projectName}}
-	#large-thumbnail
-		img(src="/img/work/{{project.mediaFolder}}/main.jpg")
-	h3 {{project.content.header.title}}
-	p {{project.content.header.copy}}
+#Work.content-area
+	.row
+		div(ng-if="project.videoUrl")
+			iframe#large-video(ng-src="{{project.videoUrl}}", frameborder="0",webkitallowfullscreen="", mozallowfullscreen="", allowfullscreen="" width="500", height="281")
+		div(ng-if="!project.videoUrl")
+			#large-thumbnail
+				img(ng-src="/img/work/{{project.mediaFolder}}/main.jpg")
+	.row
+		h3 {{project.clientName}}
+		h1 {{project.projectName}}
+		h4 {{project.projectSubHead}}
+	.row
+		p {{project.content.header.copy}}
 	

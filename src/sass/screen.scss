@@ -39,7 +39,7 @@ body{
 		float:left;
 		width:50%;
 		display:inline-block;
-		margin-left:2rem;
+		margin-left:5rem;
 		opacity:0;
 		transform: translate(200%,0);
 		//transition: transform 2s ease-in-out;
@@ -88,7 +88,7 @@ body{
 		font-family:$Avenir-Medium;
 	}
 	h3{
-		font-size:2rem;
+		font-size:1.8rem;
 		line-height: 140%;
 		text-transform: uppercase;
 		margin-top:.5rem;
@@ -96,7 +96,7 @@ body{
 	}
 	p{
 		font-size:1.5rem;
-		line-height: 130%;
+		line-height: 140%;
 		margin-top:.5rem;
 		font-family:$Avenir-Book;
 	}

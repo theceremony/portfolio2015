@@ -14,7 +14,7 @@ var createjs			= require('easel'),
 
 
 var app = angular.module('ngAppStrict',['ngRoute'])
-	.config(['$routeProvider',function($routeProvider){
+	.config(['$routeProvider','$sceDelegateProvider',function($routeProvider,$sceDelegateProvider){
 		$routeProvider
 			.when('/work/:projectId',{
 				controller:'WorkCtrl',
@@ -26,6 +26,10 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 			.otherwise({
 				redirectTo: '/welcome'
 			});
+		$sceDelegateProvider.resourceUrlWhitelist([
+			'self',
+			'https://player.vimeo.com/**'
+		]);
 	}])
 	// Canvas Controller ------------------------------
 	.controller('CanvasCtrl', CanvasCtrl)
