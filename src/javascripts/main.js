@@ -36,21 +36,34 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 			'https://player.vimeo.com/**'
 		]);
 	}])
+	.factory('hoverProject', ['$rootScope', function($rootScope){
+		var project = undefined;
+		return {
+			getHoverProject : function(){ return project; },
+			setHoverProject : function(obj){ 
+				project = obj; 
+				$rootScope.$broadcast('hoverProject:updated',project);
+			},
+			unsetHoverProject : function(){
+				project = undefined;
+				$rootScope.$broadcast('hoverProject:unset');
+				console.log('oh hi mark')	
+			}
+		}
+	}])
 	// Canvas Controller ------------------------------
-	.controller('CanvasCtrl', CanvasCtrl)
+	.controller('CanvasCtrl', ['$scope','$window','$filter','hoverProject', CanvasCtrl])
 	.directive('displaybackground',['$window',DisplayBackground])
-	.directive('resizebackground',['$window',ResizeBackground])
+	// .directive('resizebackground',['$window',ResizeBackground])
 	// Work Controller ------------------------------
 	.controller('WorkCtrl',['$scope','$routeParams','$filter', WorkCtrl])
 	.controller('AboutCtrl',['$scope','$routeParams','$filter', AboutCtrl])
 	// Menu Controller -------------------------------
-	.controller('MenuCtrl', ['$scope','$http','$filter', MenuCtrl])
+	.controller('MenuCtrl', ['$scope','$http','$filter','hoverProject', MenuCtrl])
 	.directive('togglevisible',ToggleVisible)
 	.directive('showpreview',ShowPreview)
 	.directive('showproject',ShowProject)
 	.controller('WelcomeCtrl',function($scope){
-		console.log('hello');
 		$("body").removeClass('work-visible');
 		$("section.header").removeClass('collapsed');
-		
 	});

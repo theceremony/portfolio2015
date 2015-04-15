@@ -13,7 +13,8 @@ html(lang="en" ng-app="ngAppStrict" ng-strict-di="true")
 		title
 			|Selected Work From Jeramy Morrill
 	body
-		canvas#main-background-display(width="1680" height="1050" ng-controller="CanvasCtrl" displaybackground resizebackground)
+		div(ng-controller="CanvasCtrl")
+			canvas#main-background-display(width="1680" height="1050" displaybackground resizebackground)
 		#content-container(ng-controller="MenuCtrl")
 			section.header
 				h1#heading Jeramy Morrill

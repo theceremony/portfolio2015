@@ -4,9 +4,11 @@ module.exports = function(){
 	return function($scope,element,attrs) {
 		element.bind('mouseover',function($event){
 			$event.preventDefault();
-			$scope.hoverProject = $scope.getJobById(attrs['showpreview']);
-			console.log('Show Preview', $scope.hoverProject);
-			
+			$scope.setHoverProject($scope.getJobById(attrs['showpreview']));
+		});
+		element.bind('mouseout',function($event){
+			$event.preventDefault();
+			$scope.unsetHoverProject();
 		})
 	}
 }

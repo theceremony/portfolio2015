@@ -1,6 +1,7 @@
 $black: #000;
 $white: #fff;
 $hoverColor: #0af;
+$background: rgba(255,255,255,.8);
 
 
 @import "compass/reset";
@@ -27,7 +28,9 @@ canvas#main-background-display{
 	top:0;
 	left:0;
 	z-index:0;
-	display:none;
+	display:block;
+	width:100%;
+	height:100%;
 }
 
 div,section,li{
@@ -48,14 +51,18 @@ body{
 		transform: translate(300%,0);
 		//transition: transform 2s ease-in-out;
 		box-sizing:border-box;
+		background-color:$background;
+		padding-top:3rem;
+
 	}
 	&.work-visible,&.about-visible{
 		section.content{
+
 			opacity:1;
 			transform: translate(0,0);
 			transition:all .5s ease-out;
-			transition-delay: .4s;
-
+			transition-delay:.8s;
+			border-left:1px solid rgba(0,0,0,.2);
 			#work{
 				max-width:100%;
 			}
@@ -80,8 +87,9 @@ body{
 	transform: translate(-50%,-50%);
 	z-index:10;
 	.content-area{
-		border-left:1px solid rgba(0,0,0,.2);
+		// border-left:1px solid rgba(0,0,0,.2);
 		padding-left:5rem;
+		padding-right:5rem;
 		h1{
 			font-family: $Avenir-Black;
 			font-size:4rem;
@@ -133,7 +141,7 @@ body{
 		font-size:3.8rem;
 		line-height: 100%;
 		text-transform: uppercase;
-		background-color:$white;
+		background-color:$background;
 		padding:.3rem;
 	}
 	h2{
@@ -169,7 +177,7 @@ body{
 				display:inline-block;
 				text-decoration: none;
 				color:$black;
-				background-color:$white;
+				background-color:$background;
 				padding:.3rem;
 				text-transform: uppercase;
 
@@ -223,7 +231,7 @@ body{
 				font-size:1.2rem;
 				text-transform: uppercase;
 				display:inline-block;
-				background-color:$white;
+				background-color:$background;
 				margin-top:.5rem;
 				float:left;
 				clear:both;
@@ -237,7 +245,7 @@ body{
 					width:0px;
 					rotation:90deg;
 					overflow:hidden;
-					transition: width 0.1s ease-in-out;
+					transition: all 0.1s ease-in-out;
 					padding:0 0 0 0;
 					margin: 0 0 0 0;
 				}
@@ -245,9 +253,10 @@ body{
 					color:$hoverColor;
 					box-shadow: .2rem .2rem 0 rgba(0,0,0,.2);
 					&::before{
-						width:1rem;
+						width:.8rem;
 						rotation:0deg;
-						transition: width 0.1s ease-in-out;	
+						transition: all 0.1s ease-in-out;	
+						padding-left:.5rem;
 					}
 				}
 			}
