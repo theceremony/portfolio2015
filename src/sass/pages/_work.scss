@@ -20,38 +20,40 @@
 		height:5rem;
 		display:inline-block;
 		margin-right:2rem;
+		background-size:cover;
 		&.oneshow{
-			content: url(../img/svg/award-oneshow.svg);
+			background-image: url(../img/svg/award-oneshow.svg);
 		}
 		&.sandbox{
-			content: url(../img/svg/award-sandbox.svg);
+			background-image: url(../img/svg/award-sandbox.svg);
 		}
 		&.cannes{
-			content: url(../img/svg/award-cannes.svg);
+			background-image: url(../img/svg/award-cannes.svg);
 		}
 		&.fwa_sotd{
-			content: url(../img/svg/award-fwa_sotd.svg);
+			background-image: url(../img/svg/award-fwa_sotd.svg);
+
 		}
 		&.webby{
-			content: url(../img/svg/award-webby.svg);
+			background-image: url(../img/svg/award-webby.svg);
 		}
 		&.sxsw{
-			content: url(../img/svg/award-sxsw.svg);
+			background-image: url(../img/svg/award-sxsw.svg);
 		}
 		&.nyfest{
-			content: url(../img/svg/award-nyfest.svg);
+			background-image: url(../img/svg/award-nyfest.svg);
 		}
 		&.adobe{
-			content: url(../img/svg/award-adobe.svg);
+			background-image: url(../img/svg/award-adobe.svg);
 		}
 		&.adobe_2{
-			content: url(../img/svg/award-adobe_2.svg);
+			background-image: url(../img/svg/award-adobe_2.svg);
 		}
 		&.alist{
-			content: url(../img/svg/award-alist.svg);
+			background-image: url(../img/svg/award-alist.svg);
 		}
 		&.effie{
-			content: url(../img/svg/award-effie.svg);
+			background-image: url(../img/svg/award-effie.svg);
 		}
 	}
 }
