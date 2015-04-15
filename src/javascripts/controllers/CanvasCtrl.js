@@ -2,10 +2,12 @@
 
 module.exports = function($scope,$window,$filter,hoverProject) {
  	
-	$scope.showBackground = function(project){
-		// console.log('show background');
-		// console.log('finally!',project);
+	var rows = 25;
+	var cols = 25;
+	var w = 590;
+	var h = 367;
 
+	$scope.showBackground = function(project){
 		if($scope.backgroundContainer != undefined){
 			$scope.stage.removeChild($scope.backgroundContainer);
 		}
@@ -24,10 +26,6 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 		var backgroundImg = new createjs.Bitmap(img);
 				
 
-		var rows = 20;
-		var cols = 20;
-		var w = 590;
-		var h = 367;
 
 		var totalWidth = rows * w,
 			totalHeight = cols * h;
@@ -63,8 +61,6 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 			.addEventListener("change", function(){
 				$scope.stage.update();
 			})
-		
-		
 
 		$scope.backgroundContainer.regX = totalWidth * .5;
 		$scope.backgroundContainer.regY = totalHeight * .5;
@@ -75,15 +71,6 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 		$scope.stage.update();
 	}
 	$scope.hideBackground = function(project){
-		// createjs.Tween.get($scope.backgroundContainer,{override:true})
-		// 	.to({ alpha:0 }, 50)
-		// 	.call(function(){
-		// 		$scope.stage.removeChild($scope.backgroundContainer);
-		// 		$scope.stage.update();		
-		// 	})
-		// 	.addEventListener("change", function(){
-		// 		$scope.stage.update();
-		// 	})
 		$scope.stage.removeChild($scope.backgroundContainer);
 		$scope.stage.update();	
 	}
