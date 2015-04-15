@@ -12,6 +12,8 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 		$scope.backgroundContainer = new createjs.Container();
 		$scope.backgroundContainer.rotation = -30;
 
+		var angle = (Math.PI / 180) * ($scope.backgroundContainer.rotation );
+
 		var img = new Image();
 			img.onload = function(){
 				$scope.stage.update();
@@ -40,9 +42,30 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 		}
 		$scope.backgroundContainer.scaleX =
 		$scope.backgroundContainer.scaleY = .8;
-
-		$scope.backgroundContainer.alpha = .3;
 		
+		$scope.backgroundContainer.alpha = 0;
+		createjs.Tween.get($scope.backgroundContainer,{override:true})
+			.wait(500)
+			.to({
+				alpha:.3
+			}, 200)
+			.addEventListener("change", function(){
+				$scope.stage.update();
+			});
+
+		createjs.Tween.get($scope.backgroundContainer,{loop:true})
+			.to({
+				//x:$scope.backgroundContainer.x + (w * Math.cos(angle)) + 22,
+				x:$scope.backgroundContainer.x + (w * Math.cos(angle)) * 10,
+				y:$scope.backgroundContainer.y + (h * Math.sin(angle)) * 10
+				
+			}, 100000)
+			.addEventListener("change", function(){
+				$scope.stage.update();
+			})
+		
+		
+
 		$scope.backgroundContainer.regX = totalWidth * .5;
 		$scope.backgroundContainer.regY = totalHeight * .5;
 		$scope.backgroundContainer.x = $scope.stage.width * .5;
@@ -52,8 +75,17 @@ module.exports = function($scope,$window,$filter,hoverProject) {
 		$scope.stage.update();
 	}
 	$scope.hideBackground = function(project){
+		// createjs.Tween.get($scope.backgroundContainer,{override:true})
+		// 	.to({ alpha:0 }, 50)
+		// 	.call(function(){
+		// 		$scope.stage.removeChild($scope.backgroundContainer);
+		// 		$scope.stage.update();		
+		// 	})
+		// 	.addEventListener("change", function(){
+		// 		$scope.stage.update();
+		// 	})
 		$scope.stage.removeChild($scope.backgroundContainer);
-		$scope.stage.update();
+		$scope.stage.update();	
 	}
 	$scope.$on('hoverProject:unset', function(event,project) {
 		$scope.hideBackground();
