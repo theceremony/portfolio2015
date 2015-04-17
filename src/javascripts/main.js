@@ -47,7 +47,6 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 			unsetHoverProject : function(){
 				project = undefined;
 				$rootScope.$broadcast('hoverProject:unset');
-				console.log('oh hi mark')	
 			}
 		}
 	}])
@@ -63,7 +62,21 @@ var app = angular.module('ngAppStrict',['ngRoute'])
 	.directive('togglevisible',ToggleVisible)
 	.directive('showpreview',ShowPreview)
 	.directive('showproject',ShowProject)
+	.directive('showmobilemenu',function(){
+		return function($scope,element,attrs) {
+			element.bind('click',function($event){
+				if(element.hasClass('show-mobile')){
+					element.removeClass('show-mobile');
+				}else{
+					element.addClass('show-mobile');
+				}
+			});
+		};
+	})
 	.controller('WelcomeCtrl',function($scope){
 		$("body").removeClass('work-visible');
 		$("section.header").removeClass('collapsed');
 	});
+
+
+

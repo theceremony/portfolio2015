@@ -2,7 +2,7 @@ $black: #000;
 $white: #fff;
 $hoverColor: #0af;
 $background: rgba(255,255,255,.8);
-
+$mobile-width: 769px;
 
 @import "compass/reset";
 @import "compass/css3";
@@ -37,69 +37,13 @@ div,section,li{
 	box-sizing:border-box;
 }
 
-body{
-	section.header{
-		float:left;
-		// width:30%;
-	}
-	section.content{
-		// float:left;
-		width:62%;
-		display:inline-block;
-		margin-left:5rem;
-		opacity:0;
-		transform: translate(300%,0);
-		//transition: transform 2s ease-in-out;
-		box-sizing:border-box;
-		background-color:$background;
-		padding-top:3rem;
-
-	}
-	&.work-visible,&.about-visible{
-		section.content{
-
-			opacity:1;
-			transform: translate(0,0);
-			transition:all .5s ease-out;
-			transition-delay:.8s;
-			border-left:1px solid rgba(0,0,0,.2);
-			#work{
-				max-width:100%;
-			}
-		}
-		#content-container{
-			width:90%;
-			transition: width .8s ease-in-out, top .3s ease-in-out;
-			top:6%;
-			transform: translate(-50%,0);
-		}
-	}
-
-}
 
 #content-container{
-	// border:1px solid #0f0;
-	box-sizing:border-box;
-	position:fixed;
-	// width:25%;
-	width:50%;
-	left:50%;
-	top:50%;	
-	transform: translate(-50%,-50%);
-	z-index:10;
-
 	.content-area{
-		// border-left:1px solid rgba(0,0,0,.2);
-		padding-left:5rem;
-		padding-right:5rem;
 		h1{
 			font-family: $Avenir-Black;
-			font-size:4rem;
-			line-height: 120%;
-			margin-bottom:1rem;
 		}
 		h4{
-			font-size: 2rem;
 			font-family: $Avenir-Book;
 			font-style: italic;
 		}
@@ -107,27 +51,15 @@ body{
 		.exit-links{
 			a{
 				display:inline-block;
-				padding:.5rem;
-				padding-right:.8rem;
-				padding-top:.6rem;
-				// border:.1rem solid $hoverColor;
 				background-color:#fafafa;
-				position:static;
 				text-decoration: none;
-				font-size:1.2rem;
-				line-height: 100%;
 				color:$hoverColor;
 				text-transform: uppercase;
-				margin-bottom:.5rem;
-				margin-right:.5rem;
 				box-sizing:border-box;
-				transition: all .5s;
 				box-shadow: 0rem 0rem 0 rgba(0,0,0,0);
 				&:hover{
 					background-color: $hoverColor;
 					color:#fff;
-					transition: all .5s;
-					box-shadow: .2rem .2rem 0 rgba(0,0,0,.2);
 				}
 			}
 		}
@@ -136,75 +68,44 @@ body{
 		}
 	}
 	.row{
-		margin-bottom:1.6rem;
 	}
 	h1#heading{
 		text-align: left;
-		font-size:3.8rem;
-		line-height: 100%;
 		text-transform: uppercase;
 		background-color:$background;
-		padding:.3rem;
 	}
 	h2{
-		font-size:2.8rem;
-		line-height: 140%;
 		text-transform: uppercase;
-		margin-top:.5rem;
 		font-family:$Avenir-Medium;
 	}
 	h3{
-		font-size:1.8rem;
-		line-height: 140%;
 		text-transform: uppercase;
-		margin-top:.5rem;
 		font-family:$Avenir-Medium;
 	}
 	p{
-		font-size:1.3rem;
-		line-height: 140%;
-		margin-top:.5rem;
 		font-family:$Avenir-Book;
-		margin-bottom:2rem;
 		&::last-of-type{
-			margin-bottom:0;
 		}
 	}
 	section.header{
 		#main-menu{
 			text-align: left;
-			margin-top:.2rem;
-			font-size:1.6rem;
 			a{
 				display:inline-block;
 				text-decoration: none;
 				color:$black;
 				background-color:$background;
-				padding:.3rem;
 				text-transform: uppercase;
 
-				&::after{
-					content: "/";
-					margin-left:.6rem;
-					margin-right:.3rem;
-				}
-				&:last-of-type{
-					&::after{
-						content:'';
-						margin:0 0 0 0;
-					}
-				}
+				&::after{ }
+				&:last-of-type{}
 				&:hover{
 					color:$hoverColor;
-					&::after{
-						color:$black;
-					}
+					&::after{ color:$black; }
 				}
 				&.active{
 					color:$hoverColor;
-					&::after{
-						color:$black;
-					}
+					&::after{ color:$black; }
 				}
 			}
 		}
@@ -230,56 +131,260 @@ body{
 				display:table;
 			}
 			a{
-				font-size:1.2rem;
+
 				text-transform: uppercase;
-				display:inline-block;
 				background-color:$background;
-				margin-top:.5rem;
-				float:left;
-				clear:both;
 				text-decoration: none;
-				padding:0.3rem;
-				padding-left:0rem;
 				color:$black;
-				&::before{
-					content: "/";
-					display:inline-block;
-					width:0px;
-					rotation:90deg;
-					overflow:hidden;
-					transition: all 0.1s ease-in-out;
-					padding:0 0 0 0;
-					margin: 0 0 0 0;
-				}
 				&:hover{
 					color:$hoverColor;
-					box-shadow: .2rem .2rem 0 rgba(0,0,0,.2);
-					&::before{
-						width:.8rem;
-						rotation:0deg;
-						transition: all 0.1s ease-in-out;	
-						padding-left:.5rem;
-					}
 				}
-			}
-		}
-		#menu-button{
-			display:none;
-			// border:0.3rem solid #000;
-			width:2rem;
-			height:2rem;
-			position:absolute;
-			left:-3rem;
-			top:0rem;
-			content: url(../img/svg/hamburger-01.svg);
-			cursor:pointer;
-			&:hover{
-				border-color:#666;
 			}
 		}
 	}
 }
-@media only screen and (min-width: 0px) and (max-width: 1100px) {
+
+@media only screen and (min-width:$mobile-width) {
+	body{
+		section.header{
+			float:left;
+			// width:30%;
+		}
+		section.content{
+			// float:left;
+			width:62%;
+			display:inline-block;
+			margin-left:5rem;
+			opacity:0;
+			transform: translate(300%,0);
+			//transition: transform 2s ease-in-out;
+			box-sizing:border-box;
+			background-color:$background;
+			padding-top:3rem;
+
+		}
+		&.work-visible,&.about-visible{
+			section.content{
+
+				opacity:1;
+				transform: translate(0,0);
+				transition:all .5s ease-out;
+				transition-delay:.8s;
+				border-left:1px solid rgba(0,0,0,.2);
+				#work{
+					max-width:100%;
+				}
+			}
+			#content-container{
+				width:90%;
+				transition: width .8s ease-in-out, top .3s ease-in-out;
+				top:6%;
+				transform: translate(-50%,0);
+			}
+		}
+
+	}
+	#content-container{
+		// border:1px solid #0f0;
+		box-sizing:border-box;
+		position:fixed;
+		// width:25%;
+		width:50%;
+		left:50%;
+		top:50%;	
+		transform: translate(-50%,-50%);
+		z-index:10;
+
+		.content-area{
+			// border-left:1px solid rgba(0,0,0,.2);
+			padding-left:5rem;
+			padding-right:5rem;
+			h1{
+				font-size:4rem;
+				line-height: 120%;
+				margin-bottom:1rem;
+			}
+			h4{
+				font-size: 2rem;
+			}
+
+			.exit-links{
+				a{
+					display:inline-block;
+					padding:.5rem;
+					padding-right:.8rem;
+					padding-top:.6rem;
+					// border:.1rem solid $hoverColor;
+					background-color:#fafafa;
+					position:static;
+					text-decoration: none;
+					font-size:1.2rem;
+					line-height: 100%;
+					color:$hoverColor;
+					text-transform: uppercase;
+					margin-bottom:.5rem;
+					margin-right:.5rem;
+					box-sizing:border-box;
+					transition: all .5s;
+					box-shadow: 0rem 0rem 0 rgba(0,0,0,0);
+					&:hover{
+						background-color: $hoverColor;
+						color:#fff;
+						transition: all .5s;
+						box-shadow: .2rem .2rem 0 rgba(0,0,0,.2);
+					}
+				}
+			}
+			.hidden-links{
+				display:none;
+			}
+		}
+		.row{
+			margin-bottom:1.6rem;
+		}
+		h1#heading{
+			text-align: left;
+			font-size:3.8rem;
+			line-height: 100%;
+			text-transform: uppercase;
+			background-color:$background;
+			padding:.3rem;
+		}
+		h2{
+			font-size:2.8rem;
+			line-height: 140%;
+			text-transform: uppercase;
+			margin-top:.5rem;
+			font-family:$Avenir-Medium;
+		}
+		h3{
+			font-size:1.8rem;
+			line-height: 140%;
+			text-transform: uppercase;
+			margin-top:.5rem;
+			font-family:$Avenir-Medium;
+		}
+		p{
+			font-size:1.3rem;
+			line-height: 140%;
+			margin-top:.5rem;
+			font-family:$Avenir-Book;
+			margin-bottom:2rem;
+			&::last-of-type{
+				margin-bottom:0;
+			}
+		}
+		section.header{
+			#main-menu{
+				text-align: left;
+				margin-top:.2rem;
+				font-size:1.6rem;
+				a{
+					display:inline-block;
+					text-decoration: none;
+					color:$black;
+					background-color:$background;
+					padding:.3rem;
+					text-transform: uppercase;
+
+					&::after{
+						content: "/";
+						margin-left:.6rem;
+						margin-right:.3rem;
+					}
+					&:last-of-type{
+						&::after{
+							content:'';
+							margin:0 0 0 0;
+						}
+					}
+					&:hover{
+						color:$hoverColor;
+						&::after{
+							color:$black;
+						}
+					}
+					&.active{
+						color:$hoverColor;
+						&::after{
+							color:$black;
+						}
+					}
+				}
+			}
+			.sub-menu{
+				display:none;
+				transform-origin: center top;
+				.inner{
+					&::after{
+						content:'';
+						clear:both;
+						display:table;
+					}
+				}
+				&.shown{
+					display:block;
+				}
+				&.hidden{
+					display:none;
+				}
+				&::after{
+					content:'';
+					clear:both;
+					display:table;
+				}
+				a{
+					font-size:1.2rem;
+					text-transform: uppercase;
+					display:inline-block;
+					background-color:$background;
+					margin-top:.5rem;
+					float:left;
+					clear:both;
+					text-decoration: none;
+					padding:0.3rem;
+					padding-left:0rem;
+					color:$black;
+					&::before{
+						content: "/";
+						display:inline-block;
+						width:0px;
+						rotation:90deg;
+						overflow:hidden;
+						transition: all 0.1s ease-in-out;
+						padding:0 0 0 0;
+						margin: 0 0 0 0;
+					}
+					&:hover{
+						color:$hoverColor;
+						box-shadow: .2rem .2rem 0 rgba(0,0,0,.2);
+						&::before{
+							width:.8rem;
+							rotation:0deg;
+							transition: all 0.1s ease-in-out;	
+							padding-left:.5rem;
+						}
+					}
+				}
+			}
+			#menu-button{
+				display:none;
+				// border:0.3rem solid #000;
+				width:2rem;
+				height:2rem;
+				position:absolute;
+				left:-3rem;
+				top:0rem;
+				content: url(../img/svg/hamburger-01.svg);
+				cursor:pointer;
+				&:hover{
+					border-color:#666;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: $mobile-width) and (max-width: 1100px) {
 	#content-container{
 		.content-area{
 			padding-left:4rem;
@@ -346,7 +451,144 @@ body{
 			}
 			.sub-menu{
 				a{
-					font-size:1rem;
+					font-size:1.3rem;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: $mobile-width) {
+	canvas#main-background-display{
+		display:none;
+	}
+	#content-container{
+		.content-area{
+			padding-left:4rem;
+			padding-right:4rem;
+			h1{
+				font-family: $Avenir-Black;
+				font-size:3rem;
+				line-height: 120%;
+				margin-bottom:.8rem;
+			}
+			h4{
+				font-size: 1.7rem;
+			}
+
+			.exit-links{
+				a{
+					padding:.5rem;
+					padding-right:.8rem;
+					padding-top:.6rem;
+					font-size:1.2rem;
+					line-height: 100%;
+					margin-bottom:.5rem;
+					margin-right:.5rem;
+				}
+			}
+
+		}
+		.row{
+			margin-bottom:1.3rem;
+		}
+		
+		h2{
+			font-size:2.4rem;
+			line-height: 140%;
+			margin-top:.3rem;
+		}
+		h3{
+			font-size:1.5rem;
+			line-height: 140%;
+			margin-top:.5rem;
+		}
+		p{
+			font-size:1rem;
+			line-height: 140%;
+			margin-top:.3rem;
+			margin-bottom:1.8rem;
+		}
+
+		section.header{
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			background-color: $black;
+			padding:0 0 0 0;
+
+			// height:100%;
+			height:7rem;
+			transition:height 0.2s ease-in-out;
+			overflow:hidden;
+			box-shadow: .5rem .5rem 0 rgba(0,0,0,.2);
+			h1#heading{
+				font-size:2rem;
+				line-height: 100%;
+				color:$white;
+				background: none;
+				display:inline-block;
+				float:left;
+				font-family: $Avenir-Book;
+				margin-top:2.5rem;
+				margin-left:1rem;
+
+			}
+			&.show-mobile{
+				height:100%;
+				transition:height 0.2s ease-in-out;
+				#menu-button{
+					transform: rotate(90deg);
+					transition:transform 0.2s ease-in-out;
+				}
+			}
+			#menu-button{
+				float:left;
+				width:7rem;
+				height:7rem;
+				display:inline-block;
+				background-image: url(../img/svg/hamburger-01.svg);
+				background-repeat:no-repeat;
+				background-size: 100% 100%;
+				// border-right:.1rem solid $white;
+				transition:transform 0.2s ease-in-out;
+				cursor:pointer;
+				background-color:transparent;
+				// &:hover, :active{
+				// 	// background-color:$hoverColor;
+				// 	transform: rotate(90deg);
+				// 	transition:transform 0.5s ease-in-out;
+				// }
+				margin: 0 0 0 0;
+			}
+			#main-menu{
+				display:none;
+			}
+			#menu-container{
+				float:left;
+				border-top:1px solid $white;
+				padding-top:3rem;
+				padding-bottom:3rem;
+				// display:none;
+			}
+			.sub-menu{
+				display:block;
+				float:left;
+				width:100%;
+				background:transparent;
+				box-sizing:border-box;
+				.inner{
+					background:transparent;
+					box-sizing:border-box;
+					a{
+						box-sizing:border-box;
+						width:100%;
+						display:block;
+						font-size:1.3rem;
+						padding:1rem 2rem;
+						color:$white;
+						background-color:transparent;
+					}
 				}
 			}
 		}

@@ -10,7 +10,6 @@ module.exports = function($scope,$http,$filter,hoverProject) {
 	}
 	$scope.unsetHoverProject = function(){
 		hoverProject.unsetHoverProject();
-		console.log('hello');
 	}
 	$scope.getWorkMenuClass = function(){ 
 		return $scope.workMenuClass;

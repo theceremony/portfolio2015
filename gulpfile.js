@@ -64,7 +64,7 @@ gulp.task('browserify', function() {
 		console.log(error);
 		this.emit('end');
 	})
-	// .pipe(uglify())
+	.pipe(uglify())
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('build/js'));
 });
@@ -84,6 +84,9 @@ gulp.task('webserver', function() {
       open: true,
       fallback: 'index.html'
     }));
+});
+gulp.task('clear', function (done) {
+  return cache.clearAll(done);
 });
 gulp.task('watch', function() {
 	gulp.watch("src/sass/**/*", ['compass']);
